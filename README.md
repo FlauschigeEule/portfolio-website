@@ -1,4 +1,4 @@
-# portfolio-website
+# portfolio-website https://github.com/FlauschigeEule/portfolio-website
 
 <h1 align="center">Hi 👋, I'm Julie</h1>
 <h3 align="center">A newbie full-stack developer from Germany living in Ventura,CA.</h3>

@@ -9,5 +9,5 @@
     **HTML5**</br>
     **CSS3**</h5>
 <p align="center">I hope you enjoy my first project 😃</p></br>
-<a align="center">https://flauschigeeule.github.io/website-portfolio/</a>
+<p align="center">Check out my website here: https://flauschigeeule.github.io/website-portfolio/</p>
 

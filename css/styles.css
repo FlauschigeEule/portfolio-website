@@ -45,6 +45,9 @@ body {
 
 .navigation-list {
 	list-style-type: none;
+	font-family: var(--lato-font);
+	font-variant: small-caps;
+	font-size: large;
 }
 
 .navigation-list li {

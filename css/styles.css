@@ -378,7 +378,7 @@ a:active {
 	font-size: 16px;
 	line-height: 1.2;
 	margin-bottom: 0.5em;
-	transition: all 0.2;
+	transition: ease-in;
 }
 
 .personal-data:hover {

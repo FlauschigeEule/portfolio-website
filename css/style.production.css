@@ -59,6 +59,9 @@ body {
 
 .navigation-list {
 	list-style-type: none;
+	font-family: var(--lato-font);
+	font-variant: small-caps;
+	font-size: large;
 }
 
 .navigation-list li {
@@ -171,7 +174,7 @@ a:active {
 .julie-image {
 	width: 40%;
 	text-align: right;
-	padding-right: 1em;
+	padding-right: 2em;
 }
 
 .julie-image-index {
@@ -179,12 +182,13 @@ a:active {
 	width: 250px;
 	border-radius: 50%;
 	border: 1px solid rgb(186, 185, 185);
+	-webkit-box-shadow: 2px 2px 5px 0 rgb(0, 0, 0, 0.8);
+	        box-shadow: 2px 2px 5px 0 rgb(0, 0, 0, 0.8);
 }
 
 .about-index {
 	line-height: 1.2;
-	-ms-grid-column-align: center;
-	    justify-self: center;
+	justify-items: center;
 	margin-right: 10%;
 	padding-left: 15px;
 	width: 60%;
@@ -194,7 +198,7 @@ a:active {
 .about-me {
 	font-family: var(--lato-font);
 	line-height: 2.0;
-	color: rgb(253, 186, 93);
+	color: rgb(255, 69, 0, 0.8);
 	opacity: 0.8;
 }
 
@@ -450,9 +454,45 @@ a:active {
 
 /*This starts the contact section*/
 
+.contacts {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-image: url("../img/mountains.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+	border: 1px solid lightgrey;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
 .contact-info {
+	color: rgb(19, 19, 19, 1);
+	width: auto;
+	height: auto;
+	padding: 10px;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	margin-left: 20px;
+	margin-bottom: 20px;
 	text-align: center;
-	margin-top: 30px;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
+	background-color: var(--primary-background-color);
+	border-radius: 20px 20px;
+	border: 1px solid lightgrey;
 }
 
 .contact-details {
@@ -470,14 +510,19 @@ a:active {
 }
 
 .contact-form {
-	width: 19em;
+	background-color: var(--primary-background-color);
+	color: rgb(19, 19, 19, 1);
 	padding: 20px;
 	padding-left: 7px;
-	margin: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
 	border: 1px solid lightgrey;
+	border-radius: 20px 20px;
 	-webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	text-align: center;
+	z-index: 2;
 }
 
 .standard-class {
@@ -498,8 +543,8 @@ a:active {
 	font-size: 16px;
 	line-height: 1.2;
 	margin-bottom: 0.5em;
-	-webkit-transition: all 0.2;
-	transition: all 0.2;
+	-webkit-transition: ease-in;
+	transition: ease-in;
 }
 
 .personal-data:hover {
@@ -510,7 +555,7 @@ a:active {
 .personal-data:focus {
 	cursor: text;
 	color: #333333;
-	background-color: #fef3f5;
+	background-color: rgb(255, 69, 0, 0.1);
 	border-color: var(--grid-background-color);
 }
 .submit-btn {
@@ -584,6 +629,26 @@ button:focus,
 /*These are media queries*/
 
 @media all and (max-width: 800px) {
+	.julie-image {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 1.5em;
+		margin-top: 1.5em;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.about-index {
+		width: 80%;
+		text-align: center;
+		margin-bottom: 1.5em;
+	}
+	.about-index h1 {
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 800px) {
 	.profile-index {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -644,9 +709,40 @@ button:focus,
 	}
 }
 
+@media all and (min-width: 900px) {
+	.bavarian-alps {
+		width: 100%;
+	}
+}
+
 @media all and (max-width: 700px) {
 	.contact-info {
 		text-align: left;
 		margin-bottom: 50px;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.contacts {
+		display: inline-block;
+		height: auto;
+	}
+
+	.contact-form {
+		display: block;
+		text-align: center;
+		width: 80%;
+		height: 70%;
+		padding-left: 10px;
+		margin-left: 30px;
+	}
+
+	.contact-info {
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+		margin-left: 30px;
+		width: 85%;
+		height: 70%;
 	}
 }

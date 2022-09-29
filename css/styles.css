@@ -167,7 +167,7 @@ a:active {
 .about-me {
 	font-family: var(--lato-font);
 	line-height: 2.0;
-	color: rgb(253, 186, 93);
+	color: rgb(255, 69, 0, 0.8);
 	opacity: 0.8;
 }
 

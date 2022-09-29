@@ -332,9 +332,36 @@ a:active {
 
 /*This starts the contact section*/
 
+.contacts {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-image: url("../img/mountains.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+	border: 1px solid lightgrey;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
 .contact-info {
+	color: rgb(19, 19, 19, 1);
+	width: auto;
+	height: auto;
+	padding: 10px;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	margin-left: 20px;
+	margin-bottom: 20px;
 	text-align: center;
-	margin-top: 30px;
+	align-self: flex-end;
+	background-color: var(--primary-background-color);
+	border-radius: 20px 20px;
+	border: 1px solid lightgrey;
 }
 
 .contact-details {
@@ -352,13 +379,18 @@ a:active {
 }
 
 .contact-form {
-	width: 19em;
+	background-color: var(--primary-background-color);
+	color: rgb(19, 19, 19, 1);
 	padding: 20px;
 	padding-left: 7px;
-	margin: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
 	border: 1px solid lightgrey;
+	border-radius: 20px 20px;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	text-align: center;
+	z-index: 2;
 }
 
 .standard-class {
@@ -390,7 +422,7 @@ a:active {
 .personal-data:focus {
 	cursor: text;
 	color: #333333;
-	background-color: #fef3f5;
+	background-color: rgb(255, 69, 0, 0.1);
 	border-color: var(--grid-background-color);
 }
 .submit-btn {

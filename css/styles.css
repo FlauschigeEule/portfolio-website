@@ -141,7 +141,7 @@ a:active {
 .julie-image {
 	width: 40%;
 	text-align: right;
-	padding-right: 1em;
+	padding-right: 2em;
 }
 
 .julie-image-index {
@@ -149,11 +149,12 @@ a:active {
 	width: 250px;
 	border-radius: 50%;
 	border: 1px solid rgb(186, 185, 185);
+	box-shadow: 2px 2px 5px 0 rgb(0, 0, 0, 0.8);
 }
 
 .about-index {
 	line-height: 1.2;
-	justify-self: center;
+	justify-items: center;
 	margin-right: 10%;
 	padding-left: 15px;
 	width: 60%;
@@ -457,6 +458,26 @@ button:focus,
 }
 
 /*These are media queries*/
+
+@media all and (max-width: 800px) {
+	.julie-image {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 1.5em;
+		margin-top: 1.5em;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.about-index {
+		width: 80%;
+		text-align: center;
+		margin-bottom: 1.5em;
+	}
+	.about-index h1 {
+		text-align: center;
+	}
+}
 
 @media all and (max-width: 800px) {
 	.profile-index {

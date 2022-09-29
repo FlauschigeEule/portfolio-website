@@ -34,39 +34,38 @@
 		</header>
 
 		<div class="bar"></div>
-		<div class="contact-info">
-			<div>
-				<h2>Contact information</h2>
-				<p><span class="contact-details">Address</span><br>
-					Juliane Gilmore<br>
-					350 Paseo De Playa Unit 205<br>
+		<div class="contacts">
+			<div class="contact-info">
+				<h2>Contact me</h2>
+					<p><span class="contact-details">Address</span><br>
+					Julie Gilmore<br>
 					Ventura, CA, 93001<br>
 					United States<br>
-					<span class="contact-details">Cell</span><a href="cell:+18056894407">+18056894407</a><br>
+					<span class="contact-details">Cell</span><a href="cell:+18051234567">+18051234567</a><br>
 					<span class="contact-details">Mail</span><a href="mailto:juliane.gilmore@gmail.com">juliane(dot)gilmore(at)gmail(dot)com</a>
-				</p>
+					</p>
+					<a href="mailto:juliane.gilmore@gmail.com" class="ask-me">Ask me a question</a>
 			</div>
-			<div>
-				<a href="mailto:juliane.gilmore@gmail.com" class="ask-me">Ask me a question</a>
+				
+		
+
+			<div class="contact-form">
+				<h3>Leave your message below</h3>
+				<form action="#" method="post" id="contact-me">
+					<label for="contact-email" class="standard-class">* Email</label><br>
+					<input type="email" id="contact-email" name="Email" class="personal-data" required><br>
+
+					<label for="contact-cell" class="standard-class">Cell</label><br>
+					<input type="tel" id="contact-cell" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="Cell" class="personal-data"><br>
+
+					<label for="message" class="standard-class">* Message</label><br>
+					<textarea placeholder="Type your message here" maxlength=240 id="contact-message" required class="personal-data"></textarea>
+
+					<p class="asterix">* Required fields</p>
+
+					<input type="submit" value="Send Message" class="submit-btn">
+				</form>
 			</div>
-		</div>
-
-		<div class="contact-form">
-			<h3>Leave your message below</h3>
-			<form action="#" method="post" id="contact-me">
-				<label for="contact-email" class="standard-class">* Email</label><br>
-				<input type="email" id="contact-email" name="Email" class="personal-data" required><br>
-
-				<label for="contact-cell" class="standard-class">Cell</label><br>
-				<input type="tel" id="contact-cell" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="Cell" class="personal-data"><br>
-
-				<label for="message" class="standard-class">* Message</label><br>
-				<textarea placeholder="Type your message here" maxlength=240 id="contact-message" required class="personal-data"></textarea>
-
-				<p class="asterix">* Required fields</p>
-
-				<input type="submit" value="Send Message" class="submit-btn">
-			</form>
 		</div>
 		<div class="bar"></div>
 
@@ -74,13 +73,13 @@
 			<p class="social-media">Find me on</p>
 			<div class="find-me">
 				<!-- Instagram Logo -->
-				<a href="https://www.instagram.com/p4ckit0ut/">
+				<a href="https://www.instagram.com/p4ckit0ut/" target="_blank">
 				<img src="../img/instagram.svg" alt="Instagram icon"></a>
 				<!-- Github Logo -->
-				<a href="https://github.com/FlauschigeEule">
+				<a href="https://github.com/FlauschigeEule" target="_blank">
 				<img src="../img/github.svg" alt="Github icon"></a>
 				<!-- LinkedIn Logo -->
-				<a href="https://www.linkedin.com/in/julie-gilmore-6944311a5/">
+				<a href="https://www.linkedin.com/in/julie-gilmore-6944311a5/" target="_blank">
 				<img src="../img/linkedin.svg" alt="Linkedin icon"></a>
 			</div>
 		</footer>

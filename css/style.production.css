@@ -746,3 +746,9 @@ button:focus,
 		height: 70%;
 	}
 }
+
+@media all and (max-width: 400px) {
+	.phone {
+		display: static;
+	}
+}

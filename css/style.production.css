@@ -726,6 +726,7 @@ button:focus,
 	.contacts {
 		display: inline-block;
 		height: auto;
+		margin-left: 5px;
 	}
 
 	.contact-form {
